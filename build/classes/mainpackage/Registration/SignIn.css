@@ -1,0 +1,162 @@
+
+/* 
+    Created on : 12.04.2020, 16:13:53
+    Author     : Hanabi
+*/
+
+* {
+  -fx-primary: #1A1A1B;
+  -fx-secondary: #00FF4D;
+  -fx-primarytext: #B2B2B2;
+  -fx-redwarning: #FF0000
+}
+.root{
+    -fx-background-color: #1A1A1B;
+}
+.glyph-icon{
+    -fx-fill: -fx-primarytext;  
+}
+.button{
+    -fx-text-fill: -fx-primarytext;
+    -fx-background-color: -fx-primary;
+}
+//login
+.login-button{
+    -fx-border-color: -fx-secondary;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+.login-button:hover{
+    -fx-border-color: -fx-secondary;
+    -fx-background-color: -fx-secondary;
+    -fx-text-fill: -fx-primary;
+}
+//
+.text-field{
+    -fx-text-fill: -fx-primarytext;
+    -fx-font-text: 13pt;
+    -jfx-focus-color: -fx-secondary;
+}
+.wrong-login{
+    -jfx-unfocus-color: -fx-redwrong;
+    -jfx-focus-color: -fx-redwrong;
+}
+.radio-button{
+    
+    -fx-text-fill: -fx-primarytext;
+    -jfx-selected-color: -fx-secondary;
+}
+///////////////////////////////////////////
+.warning{
+    -jfx-unfocus-color: #ef5350;
+    -jfx-focus-color: #ef5350;
+}
+/////////////////////////////////////////////
+.mylistview{
+    -fx-border-color: -fx-primary;
+}
+.mylistview.scroll-bar:vertical{
+    -fx-background-color:transparent;
+}
+.mylistview .increment-button ,.mylistview .decrement-button {
+    -fx-background-color:transparent;
+	-fx-border-color: -fx-secondary;
+}
+.mylistview .scroll-bar:vertical .track{
+     -fx-background-color: transparent;
+	 -fx-border-color: -fx-primary;
+	 -fx-background-radius: 0em;
+}
+
+.mylistview .scroll-bar:vertical .thumb {
+    -fx-background-color: -fx-secondary;
+	-fx-background-insets: 2, 0, 0;
+	-fx-background-radius: 2em;
+ 
+}
+
+.mylistview .scroll-bar:vertical:pressed .track{
+     -fx-background-color: -fx-primary;
+
+	 -fx-opacity: 0.2;
+	 -fx-background-radius: 0em;
+
+}
+
+.mylistview .scroll-bar .thumb:pressed{
+    -fx-background-color: derive(black,50%);
+}
+
+.mylistview .increment-button:hover ,.mylistview .decrement-button:hover {
+    -fx-background-color: -fx-primary;
+	-fx-border-color: -fx-secondary;	
+	-fx-padding:7px;
+}
+////////////////////////////////////
+
+.menu-bar{
+    -fx-font-size: 16;
+    -fx-base : -fx-primary;
+    -fx-background-color: -fx-primary;
+}
+
+.context-menu {
+    -fx-background-color:  derive(-fx-primary, 20%);
+    -fx-font-size: 17;
+    -fx-min-width: 150px;
+}
+///////////////////////
+
+.jfx-hamburger-icon{
+    -fx-spacing: 7;
+}
+
+.jfx-hamburger-icon StackPane{
+    -fx-background-color: -fx-primarytext;
+    -fx-background-radius: 5px;
+}
+//////////////////////
+.tab{
+    -fx-background-color: -fx-primary;
+}
+
+.tab-header-background{
+    -fx-background-color: -fx-primary;
+}
+
+.tab-label{
+    -fx-text-fill: -fx-secondary;
+    -fx-font-size: 15pt; 
+}
+
+
+.tab-main{
+    -fx-pref-height : 65;
+    -fx-max-height : 65;
+}
+
+.settings-tab{
+    -fx-background-color: -fx-secondary;
+    -fx-padding: 5px 20px 5px 20px;
+}
+
+.settings-tab:selected{
+   -fx-background-color: -fx-secondary;
+   
+    
+}
+
+.settings-tab:selected .tab-label{
+    -fx-text-fill: -fx-primary;
+}
+
+.settings-tab .tab-header-background{
+    -fx-background-color: -fx-secondary;
+}
+////////
+.messages{
+    -fx-background-color: -fx-primary;
+    -fx-text-fill: -fx-primary-text;
+}
+
+

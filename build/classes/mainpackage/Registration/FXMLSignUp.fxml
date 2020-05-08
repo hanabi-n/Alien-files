@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXRadioButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="SignUp" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="550.0" stylesheets="@SignIn.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#1f93ff00" height="487.0" layoutX="20.0" layoutY="17.0" stroke="#00ff4d" strokeType="INSIDE" width="510.0" />
+      <Polyline fill="#00ff4d80" layoutX="131.0" layoutY="428.0" points="-94.0, -79.0, 51.0, -27.0, 4.0, 56.0, -94.0, -79.0" stroke="#00ff4d" strokeType="INSIDE" />
+      <Polyline fill="#00ff4d80" layoutX="448.0" layoutY="411.0" points="-25.819530487060547, -66.38167572021484, 96.2413330078125, -40.46449661254883, -61.0, 47.0, -25.819528579711914, -66.38166046142578" rotate="78.0" stroke="#00ff4d80" strokeType="INSIDE" />
+      <Polyline fill="#80ff0080" layoutX="201.0" layoutY="444.0" points="-26.0, -10.0, 33.0, 42.0, -58.0, 42.0, -26.0, -10.0" stroke="#80ff00" strokeType="INSIDE" />
+      <JFXTextField fx:id="firstNameText" layoutX="170.0" layoutY="115.0" prefHeight="37.0" prefWidth="241.0" promptText="First Name">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="lastNameText" layoutX="170.0" layoutY="164.0" prefHeight="37.0" prefWidth="241.0" promptText="Last Name">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="loginText" layoutX="170.0" layoutY="213.0" prefHeight="37.0" prefWidth="241.0" promptText="Login">
+         <font>
+            <Font size="16.0" />
+         </font></JFXTextField>
+      <JFXPasswordField fx:id="passwordText" layoutX="170.0" layoutY="262.0" prefHeight="37.0" prefWidth="241.0" promptText="Password">
+         <font>
+            <Font size="16.0" />
+         </font></JFXPasswordField>
+      <JFXPasswordField fx:id="enterPasswordText" layoutX="170.0" layoutY="311.0" prefHeight="37.0" prefWidth="241.0" promptText="Enter your password again">
+         <font>
+            <Font size="16.0" />
+         </font></JFXPasswordField>
+      <JFXRadioButton fx:id="femaleCheck" layoutX="155.0" layoutY="360.0" text="Female">
+         <font>
+            <Font size="14.0" />
+         </font></JFXRadioButton>
+      <JFXRadioButton fx:id="maleCheck" layoutX="261.0" layoutY="360.0" text="Male">
+         <font>
+            <Font size="14.0" />
+         </font></JFXRadioButton>
+      <JFXRadioButton fx:id="alienCheck" layoutX="351.0" layoutY="360.0" text="Alien">
+         <font>
+            <Font size="14.0" />
+         </font></JFXRadioButton>
+      <JFXButton fx:id="signUpButton" layoutX="225.0" layoutY="409.0" prefHeight="36.0" prefWidth="101.0" styleClass="login-button" text="Sign Up" />
+      <FontAwesomeIconView glyphName="FONT" layoutX="143.0" layoutY="145.0" size="25" />
+      <FontAwesomeIconView glyphName="BOLD" layoutX="143.0" layoutY="195.0" size="25" />
+      <FontAwesomeIconView glyphName="USER" layoutX="143.0" layoutY="245.0" size="25" />
+      <FontAwesomeIconView glyphName="KEY" layoutX="143.0" layoutY="292.0" size="25" />
+      <Polyline fill="#00ff4d80" layoutX="341.0" layoutY="459.0" points="102.0, -49.0, 166.0, 23.0, -16.0, 23.0, 102.0, -49.0" stroke="#00ff4d" strokeType="INSIDE" />
+      <Polyline fill="#80ff0080" layoutX="64.0" layoutY="409.0" points="-27.0, -40.0, 67.0, 79.0, -27.0, 79.0, -27.0, -40.0" stroke="#80ff00" strokeType="INSIDE" />
+      <Polyline fill="#80ff0080" layoutX="326.0" layoutY="416.0" points="33.0, 1.0, 111.0, -8.0, 0.0, 60.0, 33.0, 1.0" stroke="#80ff00" strokeType="INSIDE" />
+      <Polyline fill="#7fff0080" layoutX="457.0" layoutY="67.0" points="-50.0, -40.0, 50.0, -40.0, 50.0, 10.0, -50.0, -40.0" stroke="#80ff00" strokeType="INSIDE" />
+      <Polyline fill="#80ff0080" layoutX="84.0" layoutY="67.0" points="-50.0, -40.0, 50.0, -40.0, 95.0, 22.0, -50.0, -40.0" stroke="#80ff00" strokeType="INSIDE" />
+      <Polyline fill="#7fff0080" layoutX="357.0" layoutY="67.0" points="-50.0, -40.0, 50.0, -40.0, 10.0, -22.0, -50.0, -40.0" stroke="#80ff00" strokeType="INSIDE" />
+      <Polyline fill="#00ff4d80" layoutX="419.0" layoutY="97.0" points="-13.0, -64.0, 83.0, -19.0, -66.0, -39.0, -13.0, -64.0" stroke="#00ff4d" strokeType="INSIDE" />
+      <Polyline fill="#00ff4d80" layoutX="216.0" layoutY="67.0" points="-69.0, -40.0, 50.0, -40.0, -32.0, 19.0, -69.0, -40.0" stroke="#00ff4d" strokeType="INSIDE" />
+      <Polyline fill="#00ff4d80" layoutX="84.0" layoutY="98.0" points="-43.0, -64.0, -1.0, -41.0, -43.0, 20.0, -43.0, -64.0" stroke="#00ff4d" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
