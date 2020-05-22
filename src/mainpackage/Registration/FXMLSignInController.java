@@ -11,21 +11,18 @@ import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import java.awt.event.ActionEvent;
 import java.io.IOException;
-import java.net.URL;
-import java.util.ResourceBundle;
-import static javafx.application.Application.launch;
+import java.sql.ResultSet;
+import java.util.ArrayList;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
-import mainpackage.Icon.AlienIcon;
-import org.apache.commons.codec.digest.DigestUtils;
-import org.apache.commons.lang3.StringUtils;
-
-import org.apache.logging.log4j.*;
+import static mainpackage.AlienMain.setIcon;
+import mainpackage.database.DataBaseManager;
+import mainpackage.database.Users;
 
 
 /**
@@ -40,48 +37,76 @@ public class FXMLSignInController{
     
         
     @FXML
-    private void SignInHandleButton(ActionEvent event) {
+    private void SignInHandleButton() {
+        buttonLogin.setOnAction(event->{
+            String nameText = name.getText().trim();
+            String passwordText = password.getText().trim();
+                     
+            if(nameText.equals("admin") && passwordText.equals("admin") ){
+                  buttonLogin.getScene().getWindow().hide();
+                   loadWindow("/mainpackage/MainMenu/FXMLMainMenu.fxml");
+                //loginUser(nameText, passwordText); 
+                   
+            }else{
+                System.out.println("Error");
+//                name.getStyleClass().add("warning");
+//                password.getStyleClass().add("warning");               
+            }
+        });
+    }
+ ///////////////////////////////////////
+    private void loginUser(String nameText, String passwordText){
+        DataBaseManager manager = new DataBaseManager();
+        Users user = new Users();
+        user.setName(nameText);
+        user.setPassword(passwordText);
+        ArrayList<Users> result  = manager.getAllusers();
+        
+        int counter = 0;
+        while(!result.isEmpty()){
+            counter++;
+        }
+        
+        if(counter >= 1){
+            loadWindow("/mainpackage/MainMenu/FXMLMainMenu.fxml");
+        }
+//        manager.getAllusers();
         
     }
- 
 ////////////////////////////////////////
     @FXML
     void SignUpHandleButton() {
             buttonSignUp.setOnAction(event -> {
                 buttonSignUp.getScene().getWindow().hide();
-                loadSignUp();
-            });
-                
+                loadWindow("/mainpackage/Registration/FXMLSignUp.fxml");
+            });             
     }
-
-    private void loadSignUp() {
+   //////////////////////////////
+    private void loadWindow(String window){    
           try {
-            Parent parent = FXMLLoader.load(getClass().getResource("/mainpackage/MainMenu/FXMLMainMenu.fxml"));
+            Parent parent = FXMLLoader.load(getClass().getResource(window));
             Stage stage = new Stage(StageStyle.DECORATED);
             stage.setScene(new Scene(parent));
-            stage.showAndWait();
-            //  AlienIcon.setStageIcon(stage);
+            stage.setTitle("Alien Files 2.0");
+            setIcon(stage);
+            stage.showAndWait();           
         }
         catch (IOException ex) {
             ex.printStackTrace();
         }
-    
     }
-/////////////////////////////////////
+    ///////////////////////////////////////
+    public static void setIcon(Stage stage) {
+        stage.getIcons().add(new Image("/mainpackage/Wallpapers/icon.png")); 
+    }
     
-
-
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }
-//    void loadSign() {
-//        
-//        try {
-//            Parent parent = FXMLLoader.load(getClass().getResource("/mainpackage/MainMenu/FXMLMainMenu.fxml"));
-//            Stage stage = new Stage(StageStyle.DECORATED);
-//            stage.setScene(new Scene(parent));
-//            stage.showAndWait();
-//          //  AlienIcon.setStageIcon(stage);
-//        }
-//        catch (IOException ex) {
-//            ex.printStackTrace();
-//        }
-//    }
