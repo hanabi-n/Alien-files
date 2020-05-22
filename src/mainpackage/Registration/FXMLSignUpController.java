@@ -13,6 +13,7 @@ import com.jfoenix.controls.JFXTextField;
 import java.awt.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.layout.AnchorPane;
+import mainpackage.database.DataBaseManager;
 
 /**
  *
@@ -50,14 +51,18 @@ public class FXMLSignUpController {
     private JFXButton signUpButton;
 
     @FXML
-    void SignUpHandleButton(ActionEvent event) {
-/*          DataBaseControl dbHandler = new DataBaseControl();
-  //        if(passwordText.equals(enterPasswordText)){
-          dbHandler.signUpUser(firstNameText.getText(), lastNameText.getText(), loginText.getText(), 
-                  passwordText.getText(), enterPasswordText.getText(), "Female");
-
-//          }else
-//              passwordText.getStyleClass().add("wrong-credentials");
-          */
-          }
+    void SignUpHandleButton() {
+        DataBaseManager dbManager = new DataBaseManager();
+        signUpButton.setOnAction(event -> {
+//            if(passwordText.getText().equals(enterPasswordText.getText())){
+            dbManager.addUser(firstNameText.getText(), lastNameText.getText(), loginText.getText(), passwordText.getText(), "alien");
+//            }else{
+//                passwordText.getStyleClass().add("warning");
+//                enterPasswordText.getStyleClass().add("warning");
+//            }
+        }); 
+    }
 }
+
+
+    
