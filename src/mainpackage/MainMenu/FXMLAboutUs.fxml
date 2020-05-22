@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Polyline?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@../Registration/SignIn.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label layoutX="127.0" layoutY="52.0" prefHeight="53.0" prefWidth="372.0" text="&quot;Alien Files 2.0&quot; был сделан с любовью" textFill="#b2b2b2">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="225.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Wallpapers/iconSignIn.png" />
+         </image>
+      </ImageView>
+      <FontAwesomeIconView glyphName="HEART" layoutX="505.0" layoutY="89.0" size="30" />
+      <FontAwesomeIconView glyphName="HEART" layoutX="90.0" layoutY="89.0" size="30" />
+      <Polyline fill="#00ff4d80" layoutX="77.0" layoutY="206.0" points="-50.0, 35.0, 16.0, 8.0, 0.0, 60.0, -50.0, 35.0" stroke="#00ff4d" strokeType="INSIDE" />
+      <Polyline fill="#7700ff80" layoutX="456.0" layoutY="85.0" points="-22.0, 27.0, 12.0, 20.0, 25.0, 47.0, -22.0, 27.0" stroke="#7700ff" strokeType="INSIDE" />
+      <Polyline fill="#00ffcc80" layoutX="297.0" layoutY="26.0" points="20.0, 53.0, 5.0, 33.0, 28.0, 33.0, 20.0, 53.0" stroke="#00ffcc" strokeType="INSIDE" />
+      <Polyline fill="#7fff0080" layoutX="84.0" layoutY="102.0" points="38.0, 53.0, 4.0, 46.0, 28.0, 33.0, 38.0, 53.0" stroke="CHARTREUSE" strokeType="INSIDE" />
+      <Polyline fill="#ff007480" layoutX="241.0" layoutY="125.0" points="-3.0, 27.0, 12.0, 20.0, 25.0, 47.0, -3.0, 27.0" stroke="#ff0074" strokeType="INSIDE" />
+      <Label layoutX="127.0" layoutY="105.0" prefHeight="53.0" prefWidth="372.0" text="Если хотите поддержать нас, то нужно" textFill="#b2b2b2">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="91.0" layoutY="146.0" prefHeight="53.0" prefWidth="445.0" text="всего лишь поставить хороший балл на final )" textFill="#b2b2b2">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <Polyline fill="#0094ff80" layoutX="549.0" layoutY="214.0" points="-22.0, 27.0, 16.0, 8.0, 0.0, 60.0, -22.0, 27.0" stroke="#0094ff" strokeType="INSIDE" />
+      <Polyline fill="#ff006a80" layoutX="441.0" layoutY="319.0" points="-39.0, 47.0, 33.0, 17.0, 79.0, 31.0, -39.0, 47.0" stroke="#ff006a" strokeType="INSIDE" />
+      <Polyline fill="#ff7f0080" layoutX="132.0" layoutY="304.0" points="-39.0, 47.0, 33.0, 17.0, 14.0, 47.0, -39.0, 47.0" stroke="#ff7f00" strokeType="INSIDE" />
+      <Polyline fill="#ff000080" layoutX="66.0" layoutY="5.0" points="-24.0, 64.0, 5.0, 33.0, 27.0, 43.28572082519531, -24.0, 64.0" stroke="RED" strokeType="INSIDE" />
+      <Polyline fill="#fff60080" layoutX="504.0" layoutY="-10.0" points="20.0, 53.0, 5.0, 33.0, 28.0, 33.0, 20.0, 53.0" stroke="#fff600" strokeType="INSIDE" />
+      <Polyline fill="#ff150080" layoutX="541.0" layoutY="89.0" points="20.0, 53.0, 4.0, 46.0, 28.0, 33.0, 20.0, 53.0" stroke="#ff1500" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
